@@ -13,8 +13,8 @@ import time
 ## Gates
 ####
 class Gate(object):
-	# i_=np.complex(0,1)
-	i_ = complex(0,1)
+    	# i_ = np.complex128(0, 1) # TypeError: function takes at most 1 argument (2 given)
+    	i_ = complex(0,1)
 	# One qubit gates
 	# Hadamard gate
 	H=1./sqrt(2)*np.matrix('1 1; 1 -1') 
