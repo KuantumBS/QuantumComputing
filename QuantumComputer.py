@@ -13,8 +13,9 @@ import time
 ## Gates
 ####
 class Gate(object):
-	i_=np.complex(0,1)
-	## One qubit gates
+	# i_=np.complex(0,1)
+	i_ = complex(0,1)
+	# One qubit gates
 	# Hadamard gate
 	H=1./sqrt(2)*np.matrix('1 1; 1 -1') 
 	# Pauli gates
@@ -115,8 +116,9 @@ class Gate(object):
 ## States
 ####
 class State(object):
-	i_=np.complex(0,1)
-	## One qubit states (basis)
+	# i_=np.complex(0,1)
+	i_ = complex(0,1)
+	# One qubit states (basis)
 	# standard basis (z)
 	zero_state=np.matrix('1; 0')
 	one_state=np.matrix('0; 1')
